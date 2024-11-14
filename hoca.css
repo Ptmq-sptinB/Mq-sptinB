@@ -1,102 +1,102 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-}
-
-.aquarium {
-  width: 600px;
-  height: 400px;
-  background-image: url('ho.jpg'); 
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.fish {
-  width: 60px;
-  height: 40px;
-  background-image: url('danca.png'); 
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-
-.betta-fish {
-  width: 60px;
-  height: 40px;
-  background-image: url('danca2.png'); 
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-}
-
-
-.fish1, .fish2, .fish3, .fish4, .fish5 {
-  animation: swim-right 8s linear infinite;
-}
-
-.fish6, .fish7, .fish8, .fish9, .fish10, .fish11 {
-  animation: swim-left 8s linear infinite;
-}
-
-.fish1 { top: 20%; left: -100px; animation-delay: 0s; }
-.fish2 { top: 40%; left: -100px; animation-delay: 6s; }
-.fish3 { top: 60%; left: -100px; animation-delay: 4s; }
-.fish4 { top: 80%; left: -100px; animation-delay: 2s; }
-.fish5 { top: 50%; left: -100px; animation-delay: 7s; }
-
-.fish6 { top: 30%; right: -100px; animation-delay: 1s; }
-.fish7 { top: 50%; right: -100px; animation-delay: 3s; }
-.fish8 { top: 70%; right: -100px; animation-delay: 5s; }
-.fish9 { top: 10%; right: -100px; animation-delay: 2s; }
-.fish10 { top: 90%; right: -100px; animation-delay: 4s; }
-.fish11 { top: 60%; right: -100px; animation-delay: 6s; }
-
-@keyframes swim-right {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(700px); }
-}
-
-@keyframes swim-left {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-700px); }
-}
-
-@keyframes swim {
-  0% { transform: translateX(0) scaleX(1); }
-  100% { transform: translateX(500px) scaleX(-1); }
-}
-
-.bubble {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  bottom: 0;
-  animation: rise 4s ease-in infinite;
-}
-
-.bubble1 { left: 30%; animation-duration: 3s; }
-.bubble2 { left: 50%; animation-duration: 4s; animation-delay: 1s; }
-.bubble3 { left: 70%; animation-duration: 5s; animation-delay: 2s; }
-.bubble4 { left: 80%; animation-duration: 3.5s; animation-delay: 1.5s; }
-.bubble5 { left: 60%; animation-duration: 4.5s; animation-delay: 2.5s; }
-.bubble6 { left: 40%; animation-duration: 4s; animation-delay: 3s; }
-.bubble7 { left: 20%; animation-duration: 3.5s; animation-delay: 1s; }
-
-@keyframes rise {
-  0% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(-400px); opacity: 0; }
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+  }
+  
+  .aquarium {
+    width: 600px;
+    height: 400px;
+    background-image: url('ho.jpg'); 
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .fish {
+    width: 60px;
+    height: 40px;
+    background-image: url('danca.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+  
+  .betta-fish {
+    width: 60px;
+    height: 40px;
+    background-image: url('danca2.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+  
+  
+  .fish1, .fish2, .fish3, .fish4, .fish5 {
+    animation: swim-right 8s linear infinite;
+  }
+  
+  .fish6, .fish7, .fish8, .fish9, .fish10, .fish11 {
+    animation: swim-left 8s linear infinite;
+  }
+  
+  .fish1 { top: 20%; left: -100px; animation-delay: 0s; }
+  .fish2 { top: 40%; left: -100px; animation-delay: 6s; }
+  .fish3 { top: 60%; left: -100px; animation-delay: 4s; }
+  .fish4 { top: 80%; left: -100px; animation-delay: 2s; }
+  .fish5 { top: 50%; left: -100px; animation-delay: 7s; }
+  
+  .fish6 { top: 30%; right: -100px; animation-delay: 1s; }
+  .fish7 { top: 50%; right: -100px; animation-delay: 3s; }
+  .fish8 { top: 70%; right: -100px; animation-delay: 5s; }
+  .fish9 { top: 10%; right: -100px; animation-delay: 2s; }
+  .fish10 { top: 90%; right: -100px; animation-delay: 4s; }
+  .fish11 { top: 60%; right: -100px; animation-delay: 6s; }
+  
+  @keyframes swim-right {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(700px); }
+  }
+  
+  @keyframes swim-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-700px); }
+  }
+  
+  @keyframes swim {
+    0% { transform: translateX(0) scaleX(1); }
+    100% { transform: translateX(500px) scaleX(-1); }
+  }
+  
+  .bubble {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 0;
+    animation: rise 4s ease-in infinite;
+  }
+  
+  .bubble1 { left: 30%; animation-duration: 3s; }
+  .bubble2 { left: 50%; animation-duration: 4s; animation-delay: 1s; }
+  .bubble3 { left: 70%; animation-duration: 5s; animation-delay: 2s; }
+  .bubble4 { left: 80%; animation-duration: 3.5s; animation-delay: 1.5s; }
+  .bubble5 { left: 60%; animation-duration: 4.5s; animation-delay: 2.5s; }
+  .bubble6 { left: 40%; animation-duration: 4s; animation-delay: 3s; }
+  .bubble7 { left: 20%; animation-duration: 3.5s; animation-delay: 1s; }
+  
+  @keyframes rise {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-400px); opacity: 0; }
+  }
